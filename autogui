@@ -1,0 +1,25 @@
+import pyautogui
+import time
+import pyperclip
+pip install jupyterlab
+
+pyautogui.PAUSE = 1
+pyautogui.alert("Vai começar, aperte OK e não mexa em nada")
+
+# opção 1 - abrir navegador novo e entrar no chrome
+pyautogui.press("winleft")
+pyautogui.write("chrome")
+pyautogui.press("enter")
+
+link = "https://professor.escola.rs.gov.br/#/main"
+pyperclip.copy(link)
+pyautogui.hotkey("ctrl", "v")
+pyautogui.press("enter")
+time.sleep(5)
+import pyautogui
+import time
+time.sleep(4)
+print(pyautogui.position())
+pyautogui.alert("Posição Registrada")
+Point(x=971, y=419)
+'OK'
